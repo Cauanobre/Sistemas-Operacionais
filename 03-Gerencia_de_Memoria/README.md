@@ -13,17 +13,17 @@ O simulador permite comparar três estratégias clássicas de alocação:
 ## 🔍 Conceitos de SO Demonstrados
 
 - **Fragmentação Externa:** Ocorre quando há memória total livre suficiente, mas ela está dividida em blocos pequenos e não contíguos.
-- **Coalescência de Memória:** Técnica para fundir dois ou mais blocos livres adjacentes em um único bloco maior após a liberação de um processo (`mem_free`).
+- **Coalescência de Memória:** Técnica para fundir dois ou mais blocos livres adjacentes em um único bloco maior após a liberação de um processo (**mem_free**).
 - **Split de Bloco:** Divisão de um bloco livre em dois: um ocupado e um novo bloco livre com a sobra.
 - **Mapa de Memória:** Visualização textual do estado físico da memória.
 
 ## 🕹️ Comandos Disponíveis
 
-**init** Inicializa o vetor que simula a memória física e cria o primeiro bloco livre com o tamanho especificado. 
-**alloc** Executa a alocação de memória usando o algoritmo selecionado (First Fit, Best Fit ou Worst Fit).
-**free_id** Libera um bloco previamente alocado com base em seu identificador.
-**show** Exibe o estado atual da memória em duas linhas: uso físico (onde `#` é ocupado e `.` é livre) e os identificadores de cada bloco.
-**stats** Calcula e exibe métricas de uso, fragmentação interna e externa. 
+- `**init**` Inicializa o vetor que simula a memória física e cria o primeiro bloco livre com o tamanho especificado. 
+- `**alloc**` Executa a alocação de memória usando o algoritmo selecionado (First Fit, Best Fit ou Worst Fit).
+- `**free_id**` Libera um bloco previamente alocado com base em seu identificador.
+- `**show**` Exibe o estado atual da memória em duas linhas: uso físico (onde **#** é ocupado e **.** é livre) e os identificadores de cada bloco.
+- `**stats**` Calcula e exibe métricas de uso, fragmentação interna e externa. 
 
 ## 📝 Exemplo de Uso
 
@@ -43,3 +43,4 @@ Não é necessário compilar, basta ter o Python 3 instalado.
 ```bash
 
 python3 main.py
+
