@@ -59,4 +59,3 @@ bin/
 obj/
 build/
 .DS_Store
-minishell
